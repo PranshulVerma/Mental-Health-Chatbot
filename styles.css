@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') center/cover no-repeat;
+  }
+  .img{
+    width: 200px;
+    background-color: transparent;
+    padding: 5px;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+}
+.img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  .container h1 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .chatbox {
+    margin-top: 20px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #e0e0e0;
+   /* border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);*/
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-message,
+  .bot-message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .user-message {
+    background-color: #e6f7ff;
+    color: #333;
+  }
+  
+  .bot-message {
+    background-color: #f0f9ff;
+    color: #444;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /*.submit-btn {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+   /* transition: background-color 0.2s ease-in-out;
+    background: linear-gradient(to bottom, #4caf50, #45a049);
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+    background: linear-gradient(to bottom, #45a049, #4caf50);
+  }
+  */
+#submitButton
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 23px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#submitButton:hover
+{
+  background-color: #388e3c;
+}
+.fact-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.fact-box {
+  position: fixed;
+  top: 50%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  text-align: left;
+  font-weight: 700;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 9999;
+}
