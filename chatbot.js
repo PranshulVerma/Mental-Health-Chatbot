@@ -30,7 +30,7 @@ function sendMessage() {
     fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer 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',
             'Content-Type': 'application/json'
         },
         body: `{
